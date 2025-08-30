@@ -1,0 +1,111 @@
+.container{
+    padding: 1rem;
+    background: snow;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.backDropContainer {
+    width: 100%;
+    max-width: 800px;
+    height: 20vh; /* reduced height */
+    background: url("https://images.pexels.com/photos/33321557/pexels-photo-33321557.jpeg?_gl=1*1x0ykjd*_ga*MTQzODAzMTIuMTcyMjQyMDk4MQ..*_ga_8JE65Q40S6*czE3NTQ2MzY1NjYkbzYkZzEkdDE3NTQ2MzY3MDIkajQ0JGwwJGgw") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+    margin: 0 auto;
+    
+}
+
+
+.backDropContainer > img{
+    width: 8em;
+    height: 8em;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30%;
+    left: 4%;
+    text-align: center;
+}
+
+
+.profileContiner_details{
+    padding-top: 5rem;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.card_profileContainer{
+    display: flex;
+}
+
+.card_profileContainer > img{
+    width: 3.4rem;
+    height: auto;
+    height: 3.4rem;
+    object-fit: cover;
+}
+
+.connectBtn {
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    background: rgba(3, 93, 183, 0.905);
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.workHistory {
+  margin-top: 1.5rem;
+}
+
+.workHistory h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.workHistoryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.workHistoryCard {
+  background: #fff;
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+  min-width: 200px;
+  box-shadow: 10px 2px 6px rgba(56, 84, 110, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.workHistoryCard:hover {
+  transform: translateY(-1px);
+  box-shadow: 10px 4px 12px rgba(56, 84, 110, 0.25);
+}
+
+.workHistoryCard p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: #34495e;
+}
+
+.workHistoryCard p:first-child {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #2c3e50;
+}
+
+

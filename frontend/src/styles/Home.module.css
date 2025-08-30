@@ -1,0 +1,78 @@
+.container
+{
+  font-family: 'Poppins', sans-serif;
+  padding: 1.2rem;
+}
+
+.mainContainer
+{
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  align-items: center;
+  padding-inline: 2rem;
+  height: 80vh;
+}
+
+.mainContainerLeft
+{
+  flex :0.5;
+}
+
+.mainContainerRight
+{
+  flex: 0.5;
+}
+
+
+.mainContainerLeft > p:nth-child(1) {
+  background-color: #4098e5;
+  font-size: 2.9rem;
+  font-weight: 500;
+
+  /* Background gradient behind the text */
+
+  background: linear-gradient(90deg, #4098e5, #6c757d);
+  border-radius: 8px;
+
+  /* Gradient text animation */
+  background: linear-gradient(90deg, #003665, #6c757d, black);
+  background-size: 200%;
+  background-position: 0%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textReveal 4s linear infinite;
+}
+
+@keyframes textReveal {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+
+
+.mainContainerLeft > p:nth-child(2)
+{
+  color: #6c757d;
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin-top: 0.2rem;
+}
+
+.mainContainerLeft > div.buttonJoin {
+  width: fit-content;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s;
+  margin-top: 0.8rem;
+  font-size: 1.5rem;
+  background-color: #4098e5;
+  color: white;
+  padding-inline: 1.2rem;
+  padding-block: 0.4rem;
+  border-radius: 5px;
+}
